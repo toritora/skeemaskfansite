@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: Nunito;
+    color: rgb(78, 78, 78);
+    font-size: 18px;
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display:inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border-bottom: 4px solid rgb(194, 202, 209, .4);
+
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(194, 202, 209, .4);
+    
+}
+
+.main-header {
+    background-color: rgba(128, 128, 128, .6);
+    background-image: url("images/header-bg.png");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.artist-name {
+    text-align: center;
+    font-size: 3em;
+    font-family: Montserrat Subrayada;
+    font-weight: normal;
+    text-shadow: 15px 10px #023355;
+    color: white;
+}
+
+.artist-name-large {
+    font-size: 6em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: Julius Sans One;
+    color:rgb(54, 54, 54);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.content-about {
+    display:flex;
+}
+
+.about-artist-image {
+    height: 300px;
+    width: 300px;
+    margin-right: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(103, 167, 168, 0.466);
+}
+
+.main-footer {
+    top: 100%;
+    width: 100%;
+    position: sticky;
+    background-image: url("images/footer-bg.png");
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    max-width: unset;
+    width: 100%;
+}
+
+.main-footer-container .artist-name {
+    margin: 0 0 0 auto;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 3px solid rgb(140, 205, 216);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: rgb(140, 205, 216);
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+    
+}
+
+.tour-date {
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-city {
+    width: 24%
+}
+
+.tour-arena {
+    width: 42%
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color:rgb(140, 205, 216);
+    border: none;
+    border-radius: .3em;
+    font-weight: bolder;
+    font-size: 1.1em;
+    text-shadow: 2px 2px rgba(52, 60, 63, 0.5);
+    box-shadow: 3px 3px rgb(54, 54, 54, 0.5);
+}
+
+.btn-primary:hover {
+    background-color: rgb(106, 157, 167);;
+}
+
+.shop-item {
+    margin: 3%;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:rgb(54, 54, 54);
+    margin-bottom: 2%;
+}
+
+.shop-item-image {
+    height: 230px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color:rgba(52, 60, 63,)
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgb(54, 54, 54);
+}
+
+.cart-column {
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-quantity{
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: rgb(161, 52, 33);
+}
+
+.cart-quantity-input {
+    height: 47px;
+    width: 75px;
+    border-radius: 5px;
+    border: 1px solid rgb(140, 205, 216);
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+   
+}
+
+.cart-total-price {
+    color: black;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.50em;;
+}
